@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #0b1120;
+    color: #e5e7eb;
+    line-height: 1.6;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background: #111827;
+    position: sticky;
+    top: 0;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 20px;
+    color: #22d3ee;
+}
+
+.nav-links a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #e5e7eb;
+    font-size: 14px;
+}
+
+.nav-links a:hover {
+    color: #22d3ee;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+header h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #9ca3af;
+    margin-bottom: 30px;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.btn, .btn-outline {
+    padding: 10px 20px;
+    margin: 10px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.btn {
+    background-color: #22d3ee;
+    color: #000;
+}
+
+.btn-outline {
+    border: 1px solid #22d3ee;
+    color: #22d3ee;
+}
+
+.btn:hover {
+    background-color: #06b6d4;
+}
+
+.btn-outline:hover {
+    background-color: #22d3ee;
+    color: #000;
+}
+
+/* Sections */
+section {
+    max-width: 1000px;
+    margin: auto;
+    padding: 80px 20px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    border-left: 4px solid #22d3ee;
+    padding-left: 10px;
+}
+
+/* Project Cards */
+.card {
+    background: #111827;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(34, 211, 238, 0.2);
+}
+
+.card a {
+    text-decoration: none;
+    color: #22d3ee;
+    font-size: 14px;
+}
+
+/* Skills Grid */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+}
+
+.skills-grid div {
+    background: #111827;
+    padding: 10px;
+    text-align: center;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 30px;
+    background: #111827;
+    font-size: 14px;
+    color: #9ca3af;
+}
