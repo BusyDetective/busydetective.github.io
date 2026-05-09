@@ -12,9 +12,12 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 60px;
-    background: #111827;
+    background: rgba(17, 24, 39, 0.85);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
     position: sticky;
     top: 0;
+    overflow-x: hidden;
 }
 
 .logo {
@@ -80,11 +83,13 @@ header h1 {
 
 .btn:hover {
     background-color: #06b6d4;
+    box-shadow: 0 0 20px rgba(34, 211, 238, 0.4);
 }
 
 .btn-outline:hover {
     background-color: #22d3ee;
     color: #000;
+    box-shadow: 0 0 20px rgba(34, 211, 238, 0.4);
 }
 
 /* Sections */
@@ -194,6 +199,7 @@ footer {
         width: 80%;
         margin: 8px 0;
         text-align: center;
+        transition: 0.3s ease;
     }
 
     section {
@@ -202,6 +208,18 @@ footer {
 
     .skills-grid {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .hero-subtitle {
+        font-size: 18px;
+    }
+
+    .hero-description {
+        font-size: 15px;
     }
 
 }
