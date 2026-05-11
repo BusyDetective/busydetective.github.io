@@ -534,20 +534,6 @@ section {
     line-height: 1.6;
 }
 
-/* ===== GITHUB STATS ===== */
-
-.github-card {
-    text-align: center;
-}
-
-.github-card img {
-    width: 100%;
-    max-width: 700px;
-
-    border-radius: 14px;
-    border: 1px solid rgba(34, 211, 238, 0.15);
-}
-
 /* ===== CONTACT ===== */
 
 .contact-card {
