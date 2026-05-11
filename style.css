@@ -12,12 +12,17 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 60px;
+
     background: rgba(17, 24, 39, 0.85);
-    backdrop-filter: blur(10px);
-    z-index: 1000;
+    backdrop-filter: blur(12px);
+
     position: sticky;
     top: 0;
-    overflow-x: hidden;
+
+    width: 100%;
+    box-sizing: border-box;
+
+    z-index: 9999;
 }
 
 .logo {
@@ -378,6 +383,46 @@ section {
 
 .featured-buttons {
     margin-top: 20px;
+}
+
+/* ===== FEATURED IMAGE ===== */
+
+.featured-image {
+    margin-bottom: 35px;
+}
+
+.featured-image img {
+    width: 100%;
+    border-radius: 14px;
+    border: 1px solid rgba(34, 211, 238, 0.15);
+    transition: 0.3s ease;
+}
+
+.featured-image img:hover {
+    transform: scale(1.01);
+    box-shadow: 0 0 25px rgba(34, 211, 238, 0.15);
+}
+
+/* ===== SCREENSHOT GRID ===== */
+
+.screenshot-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 35px;
+}
+
+.screenshot-grid img {
+    width: 100%;
+    border-radius: 12px;
+    border: 1px solid rgba(34, 211, 238, 0.15);
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.screenshot-grid img:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 0 25px rgba(34, 211, 238, 0.18);
 }
 
 /* ===== PROJECT CARDS ===== */
